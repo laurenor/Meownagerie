@@ -1,5 +1,6 @@
 body {
 	font-family: "Itim", "sans-serif";
+	margin: 0;
 }
 
 h1 {
@@ -29,4 +30,17 @@ p {
 figure {
 	display: inline-block;
 	margin: 20px;
+	margin-bottom: 80px;
+}
+
+#gallery {
+	text-align: center;
+	background-color: #ccc;
+	height: 1000px;
+}
+
+#gallery img {
+	height: 100px;
+	border: 2px solid #666;
+	margin: 15px;
 }
