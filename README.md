@@ -1,6 +1,6 @@
 # Meownagerie 
 A "mew"-tiful gallery of Instagram cats for your viewing pleasure.
-## Instagram Functionality
+## Navigation / Features
 1. Choose a cat breed to view a "Meownagerie" of that breed.  (Default breed is "Fluffy Cat")
 2. Click on a thumbnail in the gallery to view a lightbox with a larger image of the photo with its Instagram caption.
 3. Click on the image in the lightbox to view its Instagram page.
