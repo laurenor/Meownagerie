@@ -5,7 +5,7 @@
 	<title>Meownagerie</title>
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
 
 </head>
 
@@ -13,47 +13,35 @@
 	<div id="head">
 		<h1>Meownagerie</h1>
 		<p>Choose a cat to see a Meownagerie of their breed.</p>
-		<div id="select-cat">
-			
-			<figure><span id="norwegian" onclick="addImages()"><img src="img/norwegianforestcat.png"></span>
-				<figcaption>Norwegian Forest Cat</figcaption>
-			</figure>
-			<figure><span id="scottish"><img src="img/scottishfold.png"></span>
-				<figcaption>Scottish Fold</figcaption>
-			</figure>
-			<figure><span id="bengal"><img src="img/bengal.png"></span>
-				<figcaption>Bengal</figcaption>
-			</figure>
-		</div>
+		<form id="tagsearch" onsubmit="selectedBreed()">
+		    <p>
+		        <label for="tag">Breed:</label>
+		        <select name="tag" id="tag">
+		        	<option value="norwegianforestcat">Norwegian Forest Cat</option>
+		        	<option value="scottishfold">Scottish Fold</option>
+		        	<option value="bengal">Bengal</option>
+		        	<option value="mainecoon">Maine Coon</option>
+		        	<option value="americanshorthair">American Shorthair</option>
+		        	<option value="americanlonghair">American Longhair</option>
+		        	<option value="persiancat">Persian</option>
+		        </select>
+		        <input type="submit" value="Search" />
+		    </p>
+		</form>
 	</div>
+
 	<div id="gallery"></div>
+	<div id="lightbox"></div>
+	<div id="footer"><p>Meownagerie was made by <a href="http://github.com/laurenor">Lauren Ortencio</a></p></div>
 </body>
 
-<script src="jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
 <script>
-	var norwegian = document.getElementById("norwegian"); 
-	var scottish = document.getElementById("scottish");
-	var bengal = document.getElementById("bengal");
-	var gallery = document.getElementById("gallery");
-
-
-	function addImages() {
-	    var img = document.createElement("img");
-	    img.src = 'img/norwegianforestcat.png';
-	    var imgnode = document.createTextNode("Water");
-	    img.appendChild(imgnode);
-	    document.getElementById("gallery").appendChild(img);
+	function startFunction(evt) {
+		var tagSelection = document.getElementById("tag").value;
+		console.log(tagSelection);
+		evt.preventDefault();
 	}
-
-	function getImage (){
-	  $.get('/tag_search', "hello, server!", function (results) {
-	    var adjective = results;
-	    $('#gallery').html(adjective);
-	  })
-	}
-
-	$('#melon-btn').click(getAdjective);
-
 </script>
 
 </html>

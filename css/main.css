@@ -1,46 +1,144 @@
 body {
 	font-family: "Itim", "sans-serif";
 	margin: 0;
+	color: #ccc;
+	background-color: #4d4d4d;
+	position: relative;
+	padding-bottom: 50px;
 }
 
 h1 {
 	font-size: 50px;
+	color: orange;
 }
 
 p {
 	font-size: 20px;
+	color: white;
 }
 
 #head {
 	text-align: center;
-}
-
-#select-cat img {
-	height: 200px;
-	border: 2px solid white;
-
-}
-
-#select-cat img:hover {
-	border: 2px solid black;
-	/*background-color: pink;*/
-
-}
-
-figure {
-	display: inline-block;
-	margin: 20px;
-	margin-bottom: 80px;
+	background: url(../img/paws.png);
 }
 
 #gallery {
 	text-align: center;
 	background-color: #ccc;
-	height: 1000px;
+	height: 100%;
+	padding: 20px 0;
+	background: url(../img/bright-squares.png);
+	margin-top: 60px;
+	min-height: 500px;
 }
 
 #gallery img {
 	height: 100px;
 	border: 2px solid #666;
 	margin: 15px;
+}
+
+#gallery img:hover {
+	border: 2px solid orange;
+}
+
+#footer {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #4d4d4d;
+	background-color: #333;
+	color: #fff;
+	padding-bottom: 10px;
+	right: 0;
+	left: 9;
+	bottom: 0;
+	position: absolute;
+	margin-top: 20px;
+}
+
+#footer a {
+	text-decoration: none;
+	font-weight: bold;
+	color: orange;
+}
+
+#footer a:hover {
+	color: white;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+}
+
+.lightbox img {
+	max-height: 70%;
+	max-width: 100%;
+	margin-bottom: 5px;
+}
+
+.lightbox:target {
+	display: block;
+}
+
+.caption {
+	font-size: 14px;
+	max-width: 400px;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+#lightbox a {
+	text-decoration: none;
+	color: white;
+}
+
+.close {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+#lightbox {
+	height: 0;
+}
+
+.prevnext {
+	font-size: 18px;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 400px;
+	font-style: italic;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+} 
+
+@media screen and (max-width: 400px) {
+    .lightbox img {
+        height: 300px;
+    }
+    .caption {
+    	margin: 0 auto;
+    	font-size: 18px;
+    	width: 300px;
+    }
+    .prevnext {
+    	width: 280px;
+    }
 }
