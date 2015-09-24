@@ -56,5 +56,5 @@ function addLightboxHTML(standard_url, img_id, caption, link, prev, next) {
         capt += "...";
     }
 
-    lightbox.innerHTML += '<span class="lightbox" id="' + img_id + '"><a href="#_"><div class="close">close x</div></a><div class="prevnext"><a href="#' + prev + '" class="left"><< previous</a><a href="#' + next + '" class="right">next >></a></div><br><a href="' + link + '"><img src="' + standard_url + '"></a><br><div class="caption">'+capt+' </div></span>';    
+    lightbox.innerHTML += '<span class="lightbox" id="' + img_id + '"><a href="#_"><div class="close">close x</div></a><div class="prevnext"><a href="#' + prev + '" class="left"><< previous</a><a href="#' + next + '" class="right">next >></a></div><br><a href="' + link + '"  target="_blank"><img src="' + standard_url + '"></a><br><div class="caption">'+capt+' </div></span>';    
 }
