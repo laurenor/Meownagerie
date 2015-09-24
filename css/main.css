@@ -117,7 +117,7 @@ p {
 	font-size: 18px;
 	margin: 0 auto;
 	margin-top: 10px;
-	width: 400px;
+	width: 380px;
 	font-style: italic;
 }
 
@@ -139,6 +139,6 @@ p {
     	width: 300px;
     }
     .prevnext {
-    	width: 280px;
+    	max-width: 280px;
     }
 }

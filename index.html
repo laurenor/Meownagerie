@@ -12,8 +12,8 @@
 <body>
 	<div id="head">
 		<h1>Meownagerie</h1>
-		<p>Choose a breed below to see that breed's Meownagerie.</p>
-		<form id="tagsearch" onsubmit="selectedBreed()">
+		<p>Choose a breed below to see a that breed's Meownagerie.</p>
+		<form id="tagsearch" onsubmit="event.preventDefault(); selectedBreed(this)">
 		    <p>
 		        <label for="tag">Breed:</label>
 		        <select name="tag" id="tag">
@@ -36,13 +36,6 @@
 </body>
 
 <script src="js/script.js"></script>
-<script>
-	function startFunction(evt) {
-		var tagSelection = document.getElementById("tag").value;
-		console.log(tagSelection);
-		evt.preventDefault();
-	}
-</script>
 
 </html>
 
