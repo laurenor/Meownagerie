@@ -1,5 +1,7 @@
 # Meownagerie 
 A "mew"-tiful gallery of Instagram cats for your viewing pleasure.
+
+Live version can be viewed <a href="http://laurenor.github.io/meownagerie" target="_blank">here</a>.
 ## Navigation / Features
 1. Choose a cat breed to view a "Meownagerie" of that breed.
 2. Click on a thumbnail in the gallery to view a lightbox with a larger image of the photo with its Instagram caption.
