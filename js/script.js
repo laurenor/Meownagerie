@@ -24,8 +24,6 @@ function processInstaData(instagramData) {
         var caption = pic.caption.text;
         var link = pic.link;
         var imgId = i;
-        // var prev = i-1;
-        // var next = i+1;
         if (imgId == 0) {
             prev = 29;
         }
