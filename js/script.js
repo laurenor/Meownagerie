@@ -25,12 +25,12 @@ function processInstaData(instagramData) {
         var link = pic.link;
         var imgId = i;
         if (imgId == 0) {
-            prev = 29;
+            prev = NUM_IMAGES - 1;
         }
         else {
             prev = i-1;
         }
-        if (imgId == 29) {
+        if (imgId == NUM_IMAGES - 1) {
             next = 0;
         }
         else {
