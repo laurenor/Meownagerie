@@ -42,7 +42,6 @@ function processInstaData(instagramData) {
 }
 
 function selectedBreed(form) {
-    console.log(form);
     var tag = document.getElementById("tag").value;
     setTag(tag);
 }
